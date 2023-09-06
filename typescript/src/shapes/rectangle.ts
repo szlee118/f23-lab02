@@ -1,17 +1,11 @@
-interface Rectangle extends Shape {
-    width: number,
-    height: number
-}
+import {Shape} from './shape.js'
 
-function newRectangle(width: number, height: number): Rectangle {
-    return {
-        width,
-        height,
-
-        computeArea: function (): number {
+function newRectangle(width: number, height: number): Shape {
+    return{
+        computeArea(): number {
             return width * height
         }
     }
 }
 
-export { Rectangle, newRectangle }
+export { newRectangle }

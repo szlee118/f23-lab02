@@ -1,11 +1,8 @@
-interface Circle extends Shape{
-    radius: number;
-}
+import {Shape} from './shape.js'
 
-function circle(radius: number): Circle {
-    return {
-        radius,
-        computeArea: function (): number {
+function circle(radius: number): Shape {
+    return{
+        computeArea(): number {
             return Math.PI * radius * radius
         }
     }

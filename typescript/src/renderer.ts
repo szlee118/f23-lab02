@@ -1,3 +1,5 @@
+import { Shape } from "./shapes/shape.js";
+
 function newRenderer(shape: Shape) {
     return {
         draw() {
